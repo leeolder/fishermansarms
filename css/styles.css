@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Copper Plate';
     font-weight: bold;
-    src: url("./fonts/copper-plate-bold.otf") format("opentype");
+    src: url("../fonts/copper-plate-bold.otf") format("opentype");
 }
 
 html {
