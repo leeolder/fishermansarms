@@ -173,9 +173,8 @@ a:hover, a:active, a:focus {
 }
 
 .food-wrapper {
-    margin-top: 1rem;
-    padding: 0 0.5rem;
-    margin-bottom: 1rem;
+    background: white;
+    padding: 4px;
 }
 
 .food-item {
@@ -183,8 +182,6 @@ a:hover, a:active, a:focus {
     background-size: cover;
     background-position: center;
     border: 4px solid white;
-    margin: 0.5rem;
-    width: calc(100% - 1rem);
 }
 
 .hero-gemstone {
