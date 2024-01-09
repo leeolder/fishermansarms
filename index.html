@@ -5,12 +5,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Fishermans Arms, Maidstone - Craft Beer Bar</title>
-    <meta name="description" content="Discover a riverside gem in Maidstone's historic heart at the Fishermans Arms. Nestled along by the River Len and steeped in centuries-old charm, our pub, dating back to the 1430s, offers a delightful blend of tradition and modernity. Savor handcrafted ales, soak in the ambiance, and create unforgettable memories in our timeless establishment. Join us for a unique experience by the river at Fishermans Arms today!">
+    <meta name="description" content="Discover a gem in Maidstone's historic heart at the Fishermans Arms. Nestled along by the River Len and steeped in centuries-old charm, our pub, dating back to the 1430s, offers a delightful blend of tradition and modernity. Savor handcrafted ales, soak in the ambiance, and create unforgettable memories in our timeless establishment.">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/foundation.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
@@ -18,20 +15,23 @@
     <div class="body-wrap">
 
         <div class="header">
-            <img src="./images/gemstone-ales-wide.png" class="hero-gemstone">
+            <img src="./images/gemstone-ales-wide.webp" class="hero-gemstone" alt="gemstone ales logo">
             <h1>Fishermans Arms</h1>
             <ul class="menu">
-                <li><a onclick="scrollSmoothTo('welcome')">Welcome</a></li>
-                <li><a onclick="scrollSmoothTo('beer')">Our Beer</a></li>
-                <li><a onclick="scrollSmoothTo('food')">Homemade Food</a></li>
-                <li><a onclick="scrollSmoothTo('find')">Where To Find Us</a></li>
+                <li><span onclick="scrollSmoothTo('welcome')">Welcome</span></li>
+                <li><span onclick="scrollSmoothTo('beer')">Our Beer</span></li>
+                <li><span onclick="scrollSmoothTo('food')">Homemade Food</span></li>
+                <li><span onclick="scrollSmoothTo('find')">Where To Find Us</span></li>
             </ul>
         </div>
 
         <div id="welcome" class="section primary-section">
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
-                    <div class="cell small-12 medium-6">
+                    <div class="cell small-12 large-6 large-order-2 mob-padding-overide">
+                        <div class="section-img" style="background-image: url('./images/bar-02.webp')"></div>
+                    </div>
+                    <div class="cell small-12 large-6 large-order-1">
                         <div class="section-text">
                             <h2>Maidstones First Craft Beer Bar</h2>
                             <p>Welcome to The Fishermans Arms, the friendliest addition to Maidstone's vibrant pub scene! As the owner and Chief Brewer, Val is thrilled to open our doors to locals and visitors alike, inviting you to experience the charm and history of this beautiful location on the banks of the River Len.</p>
@@ -40,9 +40,6 @@
 
                             <p>Please feel free to contact us either by emailing <a href="mailto:info@fishermanspub.co.uk">info@fishermanspub.co.uk</a> or by giving us a call at <a href="tel:01622 755443">01622 755443</a>.</p>
                         </div>
-                    </div>
-                    <div class="cell small-12 medium-6">
-                        <div class="section-img" style="background-image: url('./images/bar-02.jpeg')"></div>
                     </div>
                 </div>
             </div>
@@ -58,81 +55,81 @@
                     </div>
                 </div>
                 <div class="beer-wrapper grid-x grid-margin-x grid-margin-y">
-                    <div class="cell small-6 medium-4 large-2">
-                        <div class="beer-item" style="background-image: url('./images/beer-staropramen.png')"></div>
+                    <div class="cell small-4 medium-4 large-2">
+                        <div class="beer-item" style="background-image: url('./images/beer-staropramen.webp')"></div>
                     </div>
-                    <div class="cell small-6 medium-4 large-2">
-                        <div class="beer-item" style="background-image: url('./images/beer-madri.png')"></div>
+                    <div class="cell small-4 medium-4 large-2">
+                        <div class="beer-item" style="background-image: url('./images/beer-madri.webp')"></div>
                     </div>
-                    <div class="cell small-6 medium-4 large-2">
-                        <div class="beer-item" style="background-image: url('./images/beer-best-bitter.png')"></div>
+                    <div class="cell small-4 medium-4 large-2">
+                        <div class="beer-item" style="background-image: url('./images/beer-best-bitter.webp')"></div>
                     </div>
-                    <div class="cell small-6 medium-4 large-2">
-                        <div class="beer-item" style="background-image: url('./images/beer-wrack-and-ruin.png')"></div>
+                    <div class="cell small-4 medium-4 large-2">
+                        <div class="beer-item" style="background-image: url('./images/beer-wrack-and-ruin.webp')"></div>
                     </div>
-                    <div class="cell small-6 medium-4 large-2">
-                        <div class="beer-item" style="background-image: url('./images/beer-oyster-stout.png')"></div>
+                    <div class="cell small-4 medium-4 large-2">
+                        <div class="beer-item" style="background-image: url('./images/beer-oyster-stout.webp')"></div>
                     </div>
-                    <div class="cell small-6 medium-4 large-2">
-                        <div class="beer-item" style="background-image: url('./images/beer-wise-owl.png')"></div>
+                    <div class="cell small-4 medium-4 large-2">
+                        <div class="beer-item" style="background-image: url('./images/beer-wise-owl.webp')"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="food" class="section secondary-section section-text">
+        <div id="food" class="section secondary-section">
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
                     <div class="cell small-12 text-center">
-                        <h2>Homemade Food</h2>
-                        <p>Indulge in our delectable homemade cuisine available exclusively from Thursday through Sunday, where we take pride in crafting every dish with care and attention. Our extensive menu not only caters to diverse tastes but also showcases a substantial selection for our vegan patrons.</p>
+                        <div class="section-text">
+                            <h2>Homemade Food</h2>
+                            <p>Indulge in our delectable homemade cuisine available exclusively from Thursday through Sunday, where we take pride in crafting every dish with care and attention. Our extensive menu not only caters to diverse tastes but also showcases a substantial selection for our vegan patrons.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="food-wrapper grid-x">
             <div class="cell small-6 medium-4 large-3">
-                <div class="food-item" style="background-image: url('./images/food-1.jpg')"></div>
+                <div class="food-item" style="background-image: url('./images/food-1.webp')"></div>
             </div>
             <div class="cell small-6 medium-4 large-3">
-                <div class="food-item" style="background-image: url('./images/food-2.jpg')"></div>
+                <div class="food-item" style="background-image: url('./images/food-2.webp')"></div>
             </div>
             <div class="cell small-6 medium-4 large-3">
-                <div class="food-item" style="background-image: url('./images/food-3.jpg')"></div>
+                <div class="food-item" style="background-image: url('./images/food-3.webp')"></div>
             </div>
             <div class="cell small-6 medium-4 large-3">
-                <div class="food-item" style="background-image: url('./images/food-4.jpg')"></div>
+                <div class="food-item" style="background-image: url('./images/food-4.webp')"></div>
             </div>
             <div class="cell small-6 medium-4 large-3">
-                <div class="food-item" style="background-image: url('./images/food-5.jpg')"></div>
+                <div class="food-item" style="background-image: url('./images/food-5.webp')"></div>
             </div>
             <div class="cell small-6 medium-4 large-3">
-                <div class="food-item" style="background-image: url('./images/food-6.jpg')"></div>
+                <div class="food-item" style="background-image: url('./images/food-6.webp')"></div>
             </div>
             <div class="cell small-6 medium-4 large-3 show-for-large">
-                <div class="food-item" style="background-image: url('./images/food-7.jpg')"></div>
+                <div class="food-item" style="background-image: url('./images/food-7.webp')"></div>
             </div>
             <div class="cell small-6 medium-4 large-3 show-for-large">
-                <div class="food-item" style="background-image: url('./images/food-8.jpg')"></div>
+                <div class="food-item" style="background-image: url('./images/food-8.webp')"></div>
             </div>
         </div>
 
         <div id="find" class="section white-section">
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
-                    
-                    <div class="cell small-12 medium-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2496.1793107061812!2d0.5224735766059407!3d51.271018371760505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df322f937fd9ab%3A0x994cae387de63fea!2sFishermans%20Arms!5e0!3m2!1sen!2suk!4v1704741410027!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
-                    <div class="cell small-12 medium-6">
-
+                    <div class="cell small-12 medium-6 large-order-2">
                         <div class="section-text">
                             <h2>Where To Find Us</h2>
                             <p>Conveniently tucked away on Lower Stone Street, you'll find The Fishermans Arms, a brief 3-minute stroll from the vibrant hub of Maidstone Town Center. Our location offers a tranquil escape within easy reach of the town's bustling energy.</p>
 
                             <p>Nestled under the beams of Maidstone's oldest pub, dating back to the 1430s, our establishment celebrates tradition while offering a modern and inviting atmosphere. Whether you're a craft beer enthusiast or simply looking to unwind with friends, The Fishermans Arms promises a memorable experience.</p>
                         </div>
+                    </div>
+
+                    <div class="cell small-12 medium-6 large-order-1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2496.1793107061812!2d0.5224735766059407!3d51.271018371760505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df322f937fd9ab%3A0x994cae387de63fea!2sFishermans%20Arms!5e0!3m2!1sen!2suk!4v1704741410027!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="google maps"></iframe>
                     </div>
                 </div>
             </div>
@@ -146,7 +143,7 @@
         <div class="grid-container">
             <div class="grid-x grid-margin-x grid-margin-y">
                 <div class="cell small-12 medium-shrink">
-                    <h6>Opening Hours</h6>
+                    <h3>Opening Hours</h3>
                     <p>Wednesday: 4-10pm</p>
                     <p>Thursday: 4-10pm</p>
                     <p>Friday: 4-11pm</p>
@@ -155,37 +152,30 @@
                 </div>
 
                 <div class="cell small-12 medium-auto">
-                    <h6>Contact Us</h6>
+                    <h3>Contact Us</h3>
                     <p>Email: <a href="mailto:info@fishermanspub.co.uk">info@fishermanspub.co.uk</a></p>
                     <p>Phone: <a href="tel:01622 755443">01622 755443</a></p>
                     <p>Address: 40 Lower Stone St, Maidstone, ME15 6NA</p>
                 </div>
 
                 <div class="cell small-12 medium-shrink">
-                    <h6>Find Us On Facebook</h6>
+                    <h3>Find Us On Facebook</h3>
                     <div class="social">
                         <a href="https://www.facebook.com/fishermansarms2016/" target="_blank" rel="nofollow">
-                            <img src="./images/facebook.svg">
+                            <img src="./images/facebook.svg" alt="facebook">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.2.12/what-input.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+
     <script>
-        $(document).foundation();
-
-
         function scrollSmoothTo(elementId) {
             var element = document.getElementById(elementId);
             element.scrollIntoView({ block: 'start',  behavior: 'smooth' });
         }
-
     </script>
 
   </body>

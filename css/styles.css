@@ -4,6 +4,14 @@
     src: url("../fonts/copper-plate-bold.otf") format("opentype");
 }
 
+@font-face {
+    font-display: swap;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
+  }
+
 html {
     height: 100%
 }
@@ -30,7 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     text-shadow: 3px 3px #d95759;
-    font-size: 4rem;
     text-align: center;
 }
 
@@ -48,8 +55,6 @@ a:hover, a:active, a:focus {
     color: #6c2945;
 }
 
-
-
 .header {
     padding: 2rem 0;
 }
@@ -60,19 +65,19 @@ a:hover, a:active, a:focus {
 }
 
 .primary-section {
-    padding: 0;
+    padding: 0 !important;
     background-color: #6c2945;
     color: white;
 }
 
 .secondary-section {
-    padding: 0;
+    padding: 0 !important;
     background-color: #ab9465;
     color: white;
 }
 
 .white-section {
-    padding: 0;
+    padding: 0 !important;
 }
 
 .primary-section a,
@@ -86,8 +91,6 @@ a:hover, a:active, a:focus {
     padding: 5rem 0 4rem;
 }
 
-
-
 .footer {
     background-color: #6c2945;
     padding: 3rem 0;
@@ -97,7 +100,7 @@ a:hover, a:active, a:focus {
     color: white;
 }
 
-.footer h6 {
+.footer h3 {
     font-size: 1rem;
 }
 
@@ -109,12 +112,6 @@ a:hover, a:active, a:focus {
 .footer a {
     text-decoration: underline;
     color: white !important;
-}
-
-.footer .social {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
 }
 
 .footer .social a {
@@ -130,12 +127,21 @@ a:hover, a:active, a:focus {
     justify-content: center;
 }
 
-.menu a {
+.menu span {
     font-size: 1.25rem;
     position: relative;
+    line-height: 1;
+    display: block;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    color: #6c2945;
 }
 
-.menu li:not(:last-child) a::after {
+.menu span:hover {
+    text-decoration: underline;
+}
+
+.menu li:not(:last-child) span::after {
     display: block;
     content: "";
     width: 2px;
@@ -148,17 +154,10 @@ a:hover, a:active, a:focus {
     transform: translateY(-50%);
 }
 
-
 .section-img {
     height: 100%;
     background-size: cover;
     background-position: center;
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: calc(50% - 0.9375rem);
 }
 
 .beer-wrapper {
@@ -185,17 +184,124 @@ a:hover, a:active, a:focus {
 }
 
 .hero-gemstone {
-    width: 275px;
     margin: 0 auto;
     display: block;
 }
 
 iframe {
     border: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: calc(50% - 0.9375rem);
-    height: 100%;
+}
+
+@media screen and (min-width: 64em) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .hero-gemstone {
+        width: 275px;
+    }
+
+    .section-img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: calc(50% - 0.9375rem);
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: calc(50% - 0.9375rem);
+        height: 100%;
+    }
+
+    .footer .social {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 63.9375em) {
+    .mob-padding-overide {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .section-text {
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    h1 {
+        font-size: 3rem;
+        margin-top: .3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero-gemstone {
+        width: 225px;
+    }
+
+    .section-img {
+        height: 450px;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    .section-text {
+        padding: 4rem 0 3rem;
+    }
+
+    iframe {
+        height: 100%;
+    }
+
+    .footer .social {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    h1 {
+        font-size: 2.3rem;
+        margin-top: .3rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero-gemstone {
+        width: 175px;
+    }
+
+    .section-img {
+        height: 250px;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .section-text {
+        padding: 3rem 0 2rem;
+    }
+
+    .food-item {
+        height: 200px;
+    }
 }
