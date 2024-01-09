@@ -117,6 +117,10 @@ a:hover, a:active, a:focus {
     width: 64px;
 }
 
+.footer .copyright {
+    margin-top: 2rem;
+}
+
 
 .menu {
     justify-content: center;
